@@ -1,0 +1,50 @@
+{
+  "name" : "business-licenses-etl",
+  "jobMode" : "SCRIPT",
+  "description" : "",
+  "role" : "arn:aws:iam::354918385749:role/service-role/AWSGlueServiceRole",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-354918385749-us-west-2/scripts/business-licenses-etl.py",
+    "pythonVersion" : "3"
+  },
+  "defaultArguments" : {
+    "--REDSHIFT_TEMP_DIR" : "s3://cmpt732-project-raw-data/business_licenses_staging/",
+    "--enable-glue-datacatalog" : "true",
+    "--job-bookmark-option" : "job-bookmark-disable",
+    "--S3_PATH" : "s3://cmpt732-project-raw-data/business-licences-2013-to-2024.parquet",
+    "--TempDir" : "s3://aws-glue-assets-354918385749-us-west-2/temporary/",
+    "--enable-metrics" : "true",
+    "--enable-spark-ui" : "true",
+    "--GLUE_ETL_ROLE" : "arn:aws:iam::354918385749:role/AWSGlueETLRole",
+    "--spark-event-logs-path" : "s3://aws-glue-assets-354918385749-us-west-2/sparkHistoryLogs/",
+    "--enable-job-insights" : "true",
+    "--enable-observability-metrics" : "true",
+    "--enable-continuous-cloudwatch-log" : "true",
+    "--REDSHIFT_TABLE_NAME" : "business_licenses",
+    "--job-language" : "python",
+    "--REDSHIFT_DATABASE_NAME" : "dev",
+    "--DC_CONNECTION_NAME" : "bletl",
+    "--JOB_NAME" : "Business Licences ETL"
+  },
+  "connections" : {
+    "connections" : [ "bletl" ]
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 10,
+  "timeout" : 2880,
+  "maxCapacity" : 10.0,
+  "glueVersion" : "4.0",
+  "numberOfWorkers" : 10,
+  "workerType" : "G.1X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "bc-land-value-analysis",
+    "branch" : "dev",
+    "folder" : "business-licenses-etl"
+  }
+}
