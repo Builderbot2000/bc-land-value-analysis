@@ -4,6 +4,13 @@ This project performs data analysis on Vancouver's building permits and property
 
 The project follows a multi-step process involving data extraction, transformation, and analysis, with interactive visualizations for public access.
 
+## Quickstart
+
+### To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
+
+### A preview heatmap of the processed project data can be accessed through this link:
+### https://cloud.dekart.xyz/reports/6b8101e8-4b30-4d7c-bd41-a4be55e13794
+
 ## Project Overview
 
 The project involves the following key steps:
@@ -49,13 +56,7 @@ The following datasets were used in this project:
 
 2. **Building Permits Data**: The building permits data is also sourced from the City of Vancouver's open data portal. This dataset provides detailed records of building permits issued for construction projects in Vancouver. It is used to analyze trends in construction and development activities. You can explore the dataset here: [Issued Building Permits Dataset](https://opendata.vancouver.ca/explore/dataset/issued-building-permits).
 
-## Getting Started
-
-### Quick Start (Interactive Visualization on MyBinder)
-
-To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
-
-### Set Up the Project on AWS (Optional)
+### How to Set Up the Project on AWS
 
 If you'd like to replicate the full project on AWS, you can set up the environment using the code in this repository. You can:
 
