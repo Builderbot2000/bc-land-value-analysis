@@ -1,0 +1,1 @@
+This project is fully deployed on cloud, there is no need to run anything on local environments.
