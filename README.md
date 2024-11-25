@@ -9,11 +9,11 @@ The project follows a multi-step process involving data extraction, transformati
 ### To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
 
 ### A preview heatmap of the processed project data can be accessed through this link:
-### https://cloud.dekart.xyz/reports/6b8101e8-4b30-4d7c-bd41-a4be55e13794
+### https://cloud.dekart.xyz/reports/3853c282-ffa2-46aa-9d12-5653b9328b3c/source
 
 ## Project Overview
 
-The project involves the following key steps:
+The project involves the following steps:
 
 1. **Data Acquisition**: Downloaded Parquet and CSV datasets from [OpenData Vancouver](https://opendata.vancouver.ca) and uploaded them to AWS S3.
 2. **ETL Process with AWS Glue**: Used PySpark to perform data extraction, transformation, and loading (ETL) in AWS Glue. The cleaned data was then loaded into AWS Redshift for further processing.
@@ -21,6 +21,7 @@ The project involves the following key steps:
 4. **Unloading Processed Data**: Unloaded the processed dataset from Redshift back to AWS S3 for further analysis.
 5. **Data Analysis and Visualization**: Read the processed dataset into AWS SageMaker, where Python was used to generate interactive visualizations.
 6. **Public Access to Visualizations**: The final interactive visualizations were pushed to this repository and are accessible publicly via [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb).
+7. **Heatmap Construction**: A portion of the data generated in this project is uploaded to GCP Big Query and displayed as a heatmap through dekart.xyz.
 
 ## Project Structure
 
@@ -47,6 +48,8 @@ The project involves the following key steps:
 - **AWS SageMaker**: For reading in processed data and generating interactive visualizations.
 - **Python (Pandas, NumPy, Matplotlib, Seaborn)**: For data analysis and visualization.
 - **Jupyter Notebooks**: For interactive analysis and exploration.
+- **GCP Big Query**: For serving as data backend of heatmap
+- **Kepler.gl / Dekart**: For generating 3D heatmap
 
 ## Data Sources
 
