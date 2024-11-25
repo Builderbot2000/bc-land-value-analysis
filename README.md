@@ -4,9 +4,16 @@ This project performs data analysis on Vancouver's building permits and property
 
 The project follows a multi-step process involving data extraction, transformation, and analysis, with interactive visualizations for public access.
 
+## Quickstart
+
+### To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
+
+### A preview heatmap of the processed project data can be accessed through this link:
+### https://cloud.dekart.xyz/reports/3853c282-ffa2-46aa-9d12-5653b9328b3c/source
+
 ## Project Overview
 
-The project involves the following key steps:
+The project involves the following steps:
 
 1. **Data Acquisition**: Downloaded Parquet and CSV datasets from [OpenData Vancouver](https://opendata.vancouver.ca) and uploaded them to AWS S3.
 2. **ETL Process with AWS Glue**: Used PySpark to perform data extraction, transformation, and loading (ETL) in AWS Glue. The cleaned data was then loaded into AWS Redshift for further processing.
@@ -14,6 +21,7 @@ The project involves the following key steps:
 4. **Unloading Processed Data**: Unloaded the processed dataset from Redshift back to AWS S3 for further analysis.
 5. **Data Analysis and Visualization**: Read the processed dataset into AWS SageMaker, where Python was used to generate interactive visualizations.
 6. **Public Access to Visualizations**: The final interactive visualizations were pushed to this repository and are accessible publicly via [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb).
+7. **Heatmap Construction**: A portion of the data generated in this project is uploaded to GCP Big Query and displayed as a heatmap through dekart.xyz.
 
 ## Project Structure
 
@@ -40,6 +48,8 @@ The project involves the following key steps:
 - **AWS SageMaker**: For reading in processed data and generating interactive visualizations.
 - **Python (Pandas, NumPy, Matplotlib, Seaborn)**: For data analysis and visualization.
 - **Jupyter Notebooks**: For interactive analysis and exploration.
+- **GCP Big Query**: For serving as data backend of heatmap
+- **Kepler.gl / Dekart**: For generating 3D heatmap
 
 ## Data Sources
 
@@ -49,13 +59,7 @@ The following datasets were used in this project:
 
 2. **Building Permits Data**: The building permits data is also sourced from the City of Vancouver's open data portal. This dataset provides detailed records of building permits issued for construction projects in Vancouver. It is used to analyze trends in construction and development activities. You can explore the dataset here: [Issued Building Permits Dataset](https://opendata.vancouver.ca/explore/dataset/issued-building-permits).
 
-## Getting Started
-
-### Quick Start (Interactive Visualization on MyBinder)
-
-To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
-
-### Set Up the Project on AWS (Optional)
+### How to Set Up the Project on AWS
 
 If you'd like to replicate the full project on AWS, you can set up the environment using the code in this repository. You can:
 
