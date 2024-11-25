@@ -59,6 +59,8 @@ The following datasets were used in this project:
 
 2. **Building Permits Data**: The building permits data is also sourced from the City of Vancouver's open data portal. This dataset provides detailed records of building permits issued for construction projects in Vancouver. It is used to analyze trends in construction and development activities. You can explore the dataset here: [Issued Building Permits Dataset](https://opendata.vancouver.ca/explore/dataset/issued-building-permits).
 
+3. **Local Area Boundary Data**: The local area boundary data is sourced from the City of Vancouver's open data portal. This dataset contains the boundaries of the city's 22 local planning areas, which are used for various city planning and analysis purposes. These boundaries remain constant over time and generally follow street centrelines. This dataset provides a spatial context for the analysis of trends in property taxes and building permits. You can explore the dataset here: [Local Area Boundary Dataset](https://opendata.vancouver.ca/explore/dataset/local-area-boundary).
+
 ### How to Set Up the Project on AWS
 
 If you'd like to replicate the full project on AWS, you can set up the environment using the code in this repository. You can:
