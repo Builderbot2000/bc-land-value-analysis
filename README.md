@@ -53,7 +53,7 @@ The following datasets were used in this project:
 
 ### Quick Start (Interactive Visualization on MyBinder)
 
-To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb). This will allow you to explore the interactive visualizations without any setup.
+To view the data analysis results and interact with the visualizations directly, you can simply click the following link to launch the project on [MyBinder](https://mybinder.org/v2/gh/Builderbot2000/bc-land-value-analysis.git/dev?labpath=cmpt732_project_visualization.ipynb) and click "▶▶". This will allow you run the notebook and explore the interactive visualizations without any setup.
 
 ### Set Up the Project on AWS (Optional)
 
