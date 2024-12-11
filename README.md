@@ -15,7 +15,7 @@ The project follows a multi-step process involving data extraction, transformati
 ### https://youtu.be/1TgVYSrJKYI
 
 ### A report of our study can be read here:
-### 
+### https://github.com/Builderbot2000/bc-land-value-analysis/blob/main/report.pdf
 
 ## Project Overview
 
