@@ -11,6 +11,12 @@ The project follows a multi-step process involving data extraction, transformati
 ### A preview heatmap of the processed project data can be accessed through this link:
 ### https://cloud.dekart.xyz/reports/3853c282-ffa2-46aa-9d12-5653b9328b3c/source
 
+### A video demo of our study can be viewed here:
+### https://youtu.be/1TgVYSrJKYI
+
+### A report of our study can be read here:
+### 
+
 ## Project Overview
 
 The project involves the following steps:
